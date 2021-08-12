@@ -1,12 +1,11 @@
 #!/bin/bash
-***************************************************************************
+#***************************************************************************
 #This script will only work from kafka broker on CDP.
 #If you want to run this on another nodes please make below changes to below variables :
 #SERVER
 #SECURITY_PROTOCOL
 #KAFKA_KEYTAB
-
-***************************************************************************
+#***************************************************************************
 
 export KAFKA_PROCESS_DIR=$(ls -1drt /var/run/cloudera-scm-agent/process/*KAFKA_BROKER | tail -1)
 export SERVER=$(grep -i listeners $KAFKA_PROCESS_DIR/kafka.properties | awk -F "/" '{print $3}' | sed 's/,//' )
