@@ -1,7 +1,7 @@
 #!/bin/bash
 #***************************************************************************
 #This script will only work from kafka broker on CDP.
-#If you want to run this on another nodes please make below changes to below variables :
+#If you want to run this on another cluster  please make sure below variables are updated :
 #SERVER
 #SECURITY_PROTOCOL
 #KAFKA_KEYTAB
